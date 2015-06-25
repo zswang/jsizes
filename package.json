@@ -1,0 +1,36 @@
+{
+  "name": "jsizes",
+  "title": "jsizes",
+  "description": "Resizer",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zswang/jsizes",
+  "main": "src/jsizes.js",
+  "author": "zswang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zswang/jsizes.git"
+  },
+  "keywords": [
+    "resize",
+    "drag",
+    "size",
+    "box"
+  ],
+  "bugs": {
+    "url": "https://github.com/zswang/jsizes/issues"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "mocha": "2.0.1",
+    "should": "4.1.0",
+    "uglify-js": "2.4.15",
+    "jdists": "0.1.10",
+    "jshint": "2.5.8"
+  },
+  "scripts": {
+  	"test": "mocha -R spec",
+    "dist": "jdists src/jsizes.js -o jsizes.js && uglifyjs jsizes.js -o jsizes.min.js -p 5 -c -m",
+    "lint": "jshint src/*.js *.json"
+  }
+}
