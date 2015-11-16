@@ -1,8 +1,11 @@
 {
   "name": "jsizes",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/zswang/jsizes",
-  "authors": "zswang",
+  "authors": {
+    "name": "zswang",
+    "url": "http://weibo.com/zswang"
+  },
   "description": "Resizer",
   "main": "jsizes.js",
   "moduleType": [
@@ -28,6 +31,7 @@
     "node_modules",
     "bower_components",
     "app/components",
+    "src",
     "test",
     "tests"
   ]
